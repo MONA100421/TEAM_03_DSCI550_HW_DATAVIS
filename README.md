@@ -28,7 +28,7 @@ The project highlights our multimodal approach to analyzing and visualizing soci
 ## 📂 Directory Structure
 
 ```
-TEAM03_DSCI550_HW_DATAVIS/
+TEAM_03_DSCI550_HW_DATAVIS/
 │
 ├── Data/
 │   ├── haunted_places_v2.tsv
