@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- Ensures proper rendering and touch zooming on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Haunted Places - USC Data Science</title>
+    <!-- Bootstrap CSS for styling and responsive design -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Base styles for body and html for full height and font */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            padding-top: 70px; /* Padding to ensure content is below the navbar */
+        }
+		
+        /* Background image and flex settings for body */
+        body {
+            background: url('./Images/Ghost_Woman.png') no-repeat top center;
+            background-size: 100% auto;
+            background-attachment: scroll;
+            display: flex;
+            flex-direction: column;
+            min-height: 200vh;
+        }
+		
+        /* Custom styles for the navbar with USC colors */
+        .navbar-custom {
+            background-color: #8B0000;
+            color: #ffffff;
+            border-bottom: 4px solid #b22222;
+        }
+		
+        /* Custom styles for brand and links in the navbar */
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-nav .nav-link {
+            color: #ffff00; 
+            margin-left: -15px; 
+        }
+		
+        /* Hover effect for navbar links */
+        .navbar-custom .navbar-nav .nav-link:hover {
+            color: #ffe5e5;
+        }
+		
+        /* Intro section styles with flex grow to fill available space */
+        .intro-section {
+            color: #fff;
+            text-shadow: 2px 2px 4px #000000;
+            /* flex-grow: 1; */
+            padding-bottom: 20px;
+        }
+		
+        /* Title styles for the main heading */
+        .title {
+            font-size: 4em;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+            color: #800000;
+        }
+		
+        /* Button styles for page scrolling */
+        .page-scroll {
+            position: relative;
+            background-color: #1B998B;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            overflow: hidden;
+        }
+		
+        /* Hover effect for the button with scaling */
+        .page-scroll:hover {
+            background-color: #E8A87C;
+            transform: scale(1.05);
+        }
+		
+        /* Pseudo-elements for decorative purposes on the button */
+        .page-scroll:before, .page-scroll:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 20px;
+            height: 100%;
+            background-color: #1B998B;
+        }
+		
+        /* Additional pseudo-element styles for the button */
+        .page-scroll:before {
+            left: 0;
+            border-radius: 50% 20% / 50%;
+            background-color: inherit;
+        }
+		
+        .page-scroll:after {
+            right: 0;
+            border-radius: 20% 50% / 50%;
+            background-color: inherit;
+        }
+		
+        /* Styles for hidden content sections, will be displayed upon action */
+        .content-section {
+            display: none;
+            padding: 10px 0;
+        }
+		
+        /* Styling for iframe elements within content sections */
+        .content-section iframe {
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 30px;
+            margin-top: 0;
+            width: 100%;
+        }
+		
+        /* Footer styles with background color and text formatting */
+        footer {
+            background: #233D4D;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto;
+            font-size: 0.8em;
+        }
+		
+        /* USC logo styles for positioning and size */
+        .usc-logo {
+            position: absolute;
+            top: -4px;
+            right: 15px;
+            width: 120px;
+        }
+		
+        /* Button styles specific to visualization controls */
+        .btn-visualization {
+            background-color: #006400;
+            color: white;
+            margin: 5px;
+        }
+		
+        /* Hover effect for visualization control buttons */
+        .btn-visualization:hover {
+            background-color: #004d00;
+        }
+		
+	/* Styles for the textbox that provides analysis */
+	.analysis-textbox {
+        background-color: #f8f9fa; /* Light background for the textbox */
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        padding: 15px;
+        margin-top: 15px;
+        }
+		
+	/* Override styles for the analysis textbox to match the Bigfoot theme */
+	.analysis-textbox {
+        background-color: #443322; /* Dark wood-like color for Bigfoot theme */
+        color: #fff; /* Light text color for readability */
+        border: 1px solid #8B7355; /* Border color that complements the theme */
+        border-radius: 0.25rem;
+        padding: 15px;
+        margin-bottom: 15px; /* Adjust margin to separate from visualization */
+        font-family: 'Courier New', Courier, monospace; /* Font that fits the old newspaper or typewriter style */
+        font-size: 1.1em; /* Slightly larger font size for better readability */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+        }
+		
+	/* Styles for the Contact Me button */
+        .btn-contact-me {
+            background-color: #4CAF50; /* Green */
+			padding: 5px 10px; /* Smaller padding */
+			font-size: 12px; /* Smaller font size */
+            color: white;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+            padding: 8px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            border-radius: 5px;
+        }
+		
+        /* Additional styling for iframe elements to adjust margin */
+        .content-section iframe {
+            margin-top: 0;
+            background-color: white !important; /* Remove margin-top as the textbox is now above the iframe */
+        }
+		
+    </style>
+</head>
+<body>
+
+    <!-- Navigation bar with custom styles and fixed position -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">DSCI 550 - Spring 2025 - Haunted Places Data Exploration</a>
+            <button class="btn btn-contact-me" data-toggle="modal" data-target="#contactModal">The Team</button>
+            <img src="./Images/USC_logo.png" alt="USC Logo" class="usc-logo" title="University of Southern California">
+        </div>
+    </nav>
+	
+	<!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contactModalLabel">The Team</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+				<p></p>                
+                <p>Member 1: <a href="mailto:yungyeec@usc.edu">Yung Yee Chia</a></p>
+                <p>Member 2: <a href="mailto:aadarshs@usc.com">Aadarsh Sudhir Ghiya</a></p>
+                <p>Member 3:  <a href="mailto:njayakum@usc.edu">Niromikha Jayakumar</a></p>
+                <p>Member 4:  <a href="mailto:cleahey@usc.edu">Colin Leahey</a></p>
+                <p>Member 5:  <a href="mailto:wengchen@usc.edu">Chen Yi Weng</a></p>
+                <p>Member 6: <a href="mailto:ziliy@usc.edu">Zili Yang</a></p>
+                <!-- <p>LinkedIn Profile: <a href="https://www.linkedin.com/in/vu-l-nguyen" target="_blank">LinkedIn</a></p>            
+                <p>Resume: <a href="https://nguyenlamvu88.github.io/dsci550_assignment_3_visualizations/resume.pdf" target="_blank">View my Resume</a></p> -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Introductory section with the main title and a call-to-action button -->
+    <section id="intro" class="intro-section text-center">
+        <h1 class="title">Haunted Places Data Insights</h1>
+        <a class="btn page-scroll" href="javascript:void(0);" onclick="toggleVisualizationMenu()">Explore Visualizations</a>
+    </section>
+
+    <!-- Hidden menu for visualization options, displayed upon interaction -->
+    <section id="visualizationMenu" class="content-section">
+        <div class="container text-center">
+            <!-- Buttons for different visualizations with event handlers for loading content -->
+	    <button class="btn btn-visualization" onclick="loadVisualization('bar_chart')">Bar Chart representing Haunted Places Count By City</button>
+	    <button class="btn btn-visualization" onclick="loadVisualization('bubble_map')">Bubble Map representing Haunted Places Count</button>
+            <button class="btn btn-visualization" onclick="loadVisualization('line_chart')">Line Chart representing Haunted Places Count by Year</button>      	
+            <button class="btn btn-visualization" onclick="loadVisualization('scatter_plot')">Scatter Plot representing Haunted Places Count vs Crime Rate</button>
+            <button class="btn btn-visualization" onclick="loadVisualization('heatmap')">Treemap of Witness Counts</button>
+            <!-- Container where visualizations and insights will be loaded dynamically -->
+            <div id="visualizationContainer" class="mt-4"></div>
+        </div>
+    </section>
+
+    <!-- Footer with copyright information -->
+    <footer>
+        <p>© USC Data Science Group 2025. All Rights Reserved.</p>
+    </footer>
+	
+	<!-- Scripts for jQuery and Bootstrap functionality -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+		// Object holding details and insights for each visualization
+        var insights = {
+            'bar_chart': {
+                detail: "The word cloud highlights the most common words found in Bigfoot sighting reports. Words like 'forest,' 'black,' 'white,' 'woods,' 'mountain,' 'tree,' and 'night' are prominent, which may reflect common conditions, environment, or descriptors in Bigfoot encounters.",
+                insight: "The frequent mention of 'night' and 'black' in conjunction with 'forest' and 'woods' in Bigfoot sightings suggests that these encounters often occur in low-light conditions within heavy vegetation areas. This combination of darkness and dense foliage might affect the reliability of sightings, potentially explaining some of the ambiguity surrounding the existence of Bigfoot."
+            },
+            'bubble_map': {
+                detail: 'This map displays Bigfoot sightings across the U.S., with the color intensity representing the number of sightings. Clusters of sightings are notable in the Pacific Northwest and along the Appalachian mountains.',
+                insight: "Bigfoot sightings are not evenly distributed across the U.S., with notable concentrations in the Pacific Northwest and Appalachia. This pattern suggests that environmental factors, such as dense forests, mountainous terrain, and extensive networks of caves or caverns, play a significant role in sightings. The 'Caves and Karst Network in the U.S.' map shows diverse cave types, including solution caves, which are commonly found in the Appalachians, and lava caves, prevalent in the volcanic terrains of the Pacific Northwest. The presence of such natural features may provide the ideal conditions or habitats associated with these mysterious sightings."
+            },
+            'line_chart': {
+                detail: 'This line and bar chart illustrates the number of Bigfoot sightings over time, categorized by the phase of the moon. It seems to suggest no clear correlation between the moon phases and the frequency of sightings. The sightings have increased over the years, peaking around the early 2000s before declining.',
+                insight: "The chart's peak in Bigfoot sightings during the early 2000s could correlate with the proliferation of personal devices like smartphones, enabling on-the-spot documentation and reporting. As traveling became more convenient and frequent, the likelihood of encounters in Bigfoot's alleged territories increased, potentially contributing to the rise in reports. However, the decline in sightings post-2020 may reflect reduced travel during the COVID-19 pandemic, when lockdowns and social distancing likely limited excursions into wilderness areas where such sightings are typically reported. Despite this fluctuation, the data suggests no clear link between sightings and moon phases, challenging the folklore that moonlight affects Bigfoot's visibility or activity."
+            },
+            'scatter_plot': {
+                detail: 'This map provides insight into Bigfoot sightings in relation to national parks, with sightings often occurring near these protected areas. The green trees represent national parks, and the orange dots represent sightings or encounters.',
+                insight: "There's a noticeable pattern of Bigfoot sightings in proximity to national parks, which could suggest either a tendency of Bigfoot to inhabit these wild, less disturbed areas or a higher likelihood of people reporting sightings in such regions due to outdoor or camping activities."
+            },
+            'heatmap': {
+                detail: 'This visualization shows the distribution of Bigfoot sightings across the United States. The size of each box is proportional to the number of witnesses in that state. The larger the box, the higher the number of witnesses reported. Washington state stands out with the most significant number of witnesses, which might suggest a higher likelihood of sighting Bigfoot in this region, or simply a higher propensity among its inhabitants to report such encounters.',
+                insight: 'Washington state leads in Bigfoot sightings, implying either a genuine hotspot for Bigfoot activity or a regional cultural tendency to report sightings. This treemap helps to quickly identify states with higher reports and might be useful in targeting further research and investigation.'
+            }
+        };
+    // Function to show or hide the visualization menu
+	function toggleVisualizationMenu() {
+        var menu = document.getElementById("visualizationMenu");
+        menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    }
+    // Function to load a selected visualization along with its insights into the page
+    function loadVisualization(visualizationName) {
+            var visualizationContainer = document.getElementById("visualizationContainer");
+            var insight = insights[visualizationName];
+            var analysisHTML = `
+                <div class="analysis-textbox">
+                    <h4>Description</h4>
+                    <p>${insight.detail}</p>
+                    <strong>Insight:</strong> <p>${insight.insight}</p>
+                </div>
+            `;
+            var visualizationURL = `./visualizations/${visualizationName}.html`;
+            var iframeHTML = `<iframe src="${visualizationURL}" width="100%" height="600" frameborder="0"></iframe>`;
+            
+			// Update the container's innerHTML order so analysis is on top
+            visualizationContainer.innerHTML = analysisHTML + iframeHTML;
+        }
+	</script>
+
+</body>
+</html>

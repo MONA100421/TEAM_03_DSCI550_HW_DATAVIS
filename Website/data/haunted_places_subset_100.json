@@ -1,0 +1,902 @@
+[
+  {
+    "city": "Ada",
+    "state": "Michigan",
+    "lat": 42.9621061,
+    "lon": -85.50489309999999,
+    "haunted_count": 46.0,
+    "crime_rate": 395.6892392,
+    "year": 1970
+  },
+  {
+    "city": "Addison",
+    "state": "Michigan",
+    "lat": 41.9714248,
+    "lon": -84.3818434,
+    "haunted_count": 3.0,
+    "crime_rate": 190.8852303,
+    "year": null
+  },
+  {
+    "city": "Adrian",
+    "state": "Michigan",
+    "lat": 41.904538,
+    "lon": -84.03565619999999,
+    "haunted_count": 3.0,
+    "crime_rate": 205.6700407,
+    "year": 1991
+  },
+  {
+    "city": "Adrian",
+    "state": "Michigan",
+    "lat": 41.9057124,
+    "lon": -84.0175653,
+    "haunted_count": 3.0,
+    "crime_rate": 205.6700407,
+    "year": 1979
+  },
+  {
+    "city": "Albion",
+    "state": "Michigan",
+    "lat": 42.2440064,
+    "lon": -84.7451775,
+    "haunted_count": 19.0,
+    "crime_rate": 602.1686961,
+    "year": 1997
+  },
+  {
+    "city": "Albion",
+    "state": "Michigan",
+    "lat": 42.2368139,
+    "lon": -84.7530555,
+    "haunted_count": 19.0,
+    "crime_rate": 602.1686961,
+    "year": 1988
+  },
+  {
+    "city": "Algoma Township",
+    "state": "Michigan",
+    "lat": 43.1492928,
+    "lon": -85.62292959999999,
+    "haunted_count": 46.0,
+    "crime_rate": 395.6892392,
+    "year": null
+  },
+  {
+    "city": "Algonac",
+    "state": "Michigan",
+    "lat": 42.6529969,
+    "lon": -82.5762902,
+    "haunted_count": 27.0,
+    "crime_rate": 259.2401025,
+    "year": 1994
+  },
+  {
+    "city": "Allegan",
+    "state": "Michigan",
+    "lat": 42.520552,
+    "lon": -85.84159919999999,
+    "haunted_count": 11.0,
+    "crime_rate": 200.8335481,
+    "year": 1987
+  },
+  {
+    "city": "Allegan",
+    "state": "Michigan",
+    "lat": 42.4977621,
+    "lon": -85.8575642,
+    "haunted_count": 11.0,
+    "crime_rate": 200.8335481,
+    "year": 1987
+  },
+  {
+    "city": "Allegan",
+    "state": "Michigan",
+    "lat": 42.5341643,
+    "lon": -85.8744224,
+    "haunted_count": 11.0,
+    "crime_rate": 200.8335481,
+    "year": 1987
+  },
+  {
+    "city": "Alma",
+    "state": "Michigan",
+    "lat": 43.379011,
+    "lon": -84.669939,
+    "haunted_count": 2.0,
+    "crime_rate": 140.5833016,
+    "year": 2014
+  },
+  {
+    "city": "Alpena",
+    "state": "Michigan",
+    "lat": 45.0629087,
+    "lon": -83.433713,
+    "haunted_count": 2.0,
+    "crime_rate": 182.1869307,
+    "year": 2017
+  },
+  {
+    "city": "Ann Arbor",
+    "state": "Michigan",
+    "lat": 42.2813889,
+    "lon": -83.70264300000001,
+    "haunted_count": 17.0,
+    "crime_rate": 294.4331527,
+    "year": 1971
+  },
+  {
+    "city": "Ann Arbor",
+    "state": "Michigan",
+    "lat": 42.2648802,
+    "lon": -83.6541587,
+    "haunted_count": 17.0,
+    "crime_rate": 294.4331527,
+    "year": 1982
+  },
+  {
+    "city": "Assininns",
+    "state": "Michigan",
+    "lat": 46.81020950000001,
+    "lon": -88.4773517,
+    "haunted_count": 2.0,
+    "crime_rate": 161.0120759,
+    "year": null
+  },
+  {
+    "city": "Atlanta",
+    "state": "Michigan",
+    "lat": 44.84782939999999,
+    "lon": -84.2878159,
+    "haunted_count": 1.0,
+    "crime_rate": 167.0843776,
+    "year": null
+  },
+  {
+    "city": "Augusta",
+    "state": "Michigan",
+    "lat": 42.3364294,
+    "lon": -85.35222189999999,
+    "haunted_count": 9.0,
+    "crime_rate": 375.8885967,
+    "year": null
+  },
+  {
+    "city": "Battle Creek",
+    "state": "Michigan",
+    "lat": 42.2979251,
+    "lon": -85.1780687,
+    "haunted_count": 19.0,
+    "crime_rate": 602.1686961,
+    "year": 2001
+  },
+  {
+    "city": "Battle Creek",
+    "state": "Michigan",
+    "lat": 42.3062055,
+    "lon": -85.17774469999999,
+    "haunted_count": 19.0,
+    "crime_rate": 602.1686961,
+    "year": 2001
+  },
+  {
+    "city": "Bay City",
+    "state": "Michigan",
+    "lat": 43.5579516,
+    "lon": -83.98600359999999,
+    "haunted_count": 7.0,
+    "crime_rate": 302.343867,
+    "year": null
+  },
+  {
+    "city": "Bay City",
+    "state": "Michigan",
+    "lat": 43.6258078,
+    "lon": -83.8741012,
+    "haunted_count": 7.0,
+    "crime_rate": 302.343867,
+    "year": 1984
+  },
+  {
+    "city": "Bay City",
+    "state": "Michigan",
+    "lat": 43.616625,
+    "lon": -83.8945444,
+    "haunted_count": 7.0,
+    "crime_rate": 302.343867,
+    "year": 1982
+  },
+  {
+    "city": "Bellaire",
+    "state": "Michigan",
+    "lat": 44.980443,
+    "lon": -85.209954,
+    "haunted_count": 3.0,
+    "crime_rate": 154.0436457,
+    "year": 1978
+  },
+  {
+    "city": "Dearborn",
+    "state": "Michigan",
+    "lat": 42.303109,
+    "lon": -83.233109,
+    "haunted_count": 138.0,
+    "crime_rate": 1065.188284,
+    "year": 1982
+  },
+  {
+    "city": "Dearborn",
+    "state": "Michigan",
+    "lat": 42.303109,
+    "lon": -83.233109,
+    "haunted_count": 138.0,
+    "crime_rate": 1065.188284,
+    "year": 1982
+  },
+  {
+    "city": "Dearborn",
+    "state": "Michigan",
+    "lat": 42.2879006,
+    "lon": -83.2683124,
+    "haunted_count": 138.0,
+    "crime_rate": 1065.188284,
+    "year": 1970
+  },
+  {
+    "city": "Belding",
+    "state": "Michigan",
+    "lat": 43.09784639999999,
+    "lon": -85.2268185,
+    "haunted_count": 4.0,
+    "crime_rate": 132.6611833,
+    "year": 1993
+  },
+  {
+    "city": "Belleville",
+    "state": "Michigan",
+    "lat": 45.66820509999999,
+    "lon": -94.819713,
+    "haunted_count": 11.0,
+    "crime_rate": null,
+    "year": 1993
+  },
+  {
+    "city": "Belleville",
+    "state": "Michigan",
+    "lat": 42.2167069,
+    "lon": -83.522807,
+    "haunted_count": 138.0,
+    "crime_rate": 1065.188284,
+    "year": 2000
+  },
+  {
+    "city": "Belleville",
+    "state": "Michigan",
+    "lat": 42.2414323,
+    "lon": -83.47570929999999,
+    "haunted_count": 138.0,
+    "crime_rate": 1065.188284,
+    "year": 2000
+  },
+  {
+    "city": "Belleville",
+    "state": "Michigan",
+    "lat": 42.2373832,
+    "lon": -83.4298354,
+    "haunted_count": 138.0,
+    "crime_rate": 1065.188284,
+    "year": 2017
+  },
+  {
+    "city": "Berville",
+    "state": "Michigan",
+    "lat": 42.9232364,
+    "lon": -82.88573939999999,
+    "haunted_count": 27.0,
+    "crime_rate": 259.2401025,
+    "year": null
+  },
+  {
+    "city": "Big Rapids",
+    "state": "Michigan",
+    "lat": 43.6964729,
+    "lon": -85.4815053,
+    "haunted_count": 3.0,
+    "crime_rate": 570.6597383,
+    "year": 1986
+  },
+  {
+    "city": "Big Rapids",
+    "state": "Michigan",
+    "lat": 44.2451965,
+    "lon": -85.3960578,
+    "haunted_count": 1.0,
+    "crime_rate": 260.3767805,
+    "year": 1981
+  },
+  {
+    "city": "Big Rapids",
+    "state": "Michigan",
+    "lat": 43.6901794,
+    "lon": -85.4856063,
+    "haunted_count": 3.0,
+    "crime_rate": 570.6597383,
+    "year": 1987
+  },
+  {
+    "city": "Birmingham",
+    "state": "Michigan",
+    "lat": 42.541766,
+    "lon": -83.205793,
+    "haunted_count": 42.0,
+    "crime_rate": 206.391478,
+    "year": 1985
+  },
+  {
+    "city": "Bloomfield",
+    "state": "Michigan",
+    "lat": 42.5778303,
+    "lon": -83.2342207,
+    "haunted_count": 42.0,
+    "crime_rate": 206.391478,
+    "year": 2011
+  },
+  {
+    "city": "Bloomfield",
+    "state": "Michigan",
+    "lat": 42.5778303,
+    "lon": -83.2342207,
+    "haunted_count": 42.0,
+    "crime_rate": 206.391478,
+    "year": 2011
+  },
+  {
+    "city": "Borculo",
+    "state": "Michigan",
+    "lat": 42.885003,
+    "lon": -86.013767,
+    "haunted_count": 11.0,
+    "crime_rate": 171.6165324,
+    "year": 1998
+  },
+  {
+    "city": "Breckenridge",
+    "state": "Michigan",
+    "lat": 43.4146517,
+    "lon": -84.47591539999999,
+    "haunted_count": 2.0,
+    "crime_rate": 140.5833016,
+    "year": null
+  },
+  {
+    "city": "Bridgeport",
+    "state": "Michigan",
+    "lat": 43.3553067,
+    "lon": -83.8698136,
+    "haunted_count": 8.0,
+    "crime_rate": 828.830479,
+    "year": 1995
+  },
+  {
+    "city": "Bridgeport",
+    "state": "Michigan",
+    "lat": 42.516651,
+    "lon": -83.063823,
+    "haunted_count": 40.0,
+    "crime_rate": 290.7218207,
+    "year": 2000
+  },
+  {
+    "city": "Brighton",
+    "state": "Michigan",
+    "lat": 42.5191232,
+    "lon": -83.6954277,
+    "haunted_count": 12.0,
+    "crime_rate": 88.37418606,
+    "year": 1972
+  },
+  {
+    "city": "Brimley",
+    "state": "Michigan",
+    "lat": 46.484246,
+    "lon": -84.6321703,
+    "haunted_count": 6.0,
+    "crime_rate": 284.2671077,
+    "year": 1975
+  },
+  {
+    "city": "Brooklyn",
+    "state": "Michigan",
+    "lat": 42.105874,
+    "lon": -84.2482819,
+    "haunted_count": 65.0,
+    "crime_rate": 316.1458885,
+    "year": 2000
+  },
+  {
+    "city": "Brownstown",
+    "state": "Michigan",
+    "lat": 42.1663269,
+    "lon": -83.220996,
+    "haunted_count": 138.0,
+    "crime_rate": 1065.188284,
+    "year": 2000
+  },
+  {
+    "city": "Brownstown",
+    "state": "Michigan",
+    "lat": 42.131493,
+    "lon": -83.269511,
+    "haunted_count": 138.0,
+    "crime_rate": 1065.188284,
+    "year": null
+  },
+  {
+    "city": "Brownstown",
+    "state": "Michigan",
+    "lat": 42.177167,
+    "lon": -83.2619069,
+    "haunted_count": 138.0,
+    "crime_rate": 1065.188284,
+    "year": null
+  },
+  {
+    "city": "Burton",
+    "state": "Michigan",
+    "lat": 42.99947179999999,
+    "lon": -83.6163423,
+    "haunted_count": 20.0,
+    "crime_rate": 922.7783984,
+    "year": null
+  },
+  {
+    "city": "Byron",
+    "state": "Michigan",
+    "lat": 42.8228091,
+    "lon": -83.9444027,
+    "haunted_count": 7.0,
+    "crime_rate": 227.8664731,
+    "year": null
+  },
+  {
+    "city": "Calumet",
+    "state": "Michigan",
+    "lat": 47.24782339999999,
+    "lon": -88.45344229999999,
+    "haunted_count": 4.0,
+    "crime_rate": 66.25258799,
+    "year": 1974
+  },
+  {
+    "city": "Canton",
+    "state": "Michigan",
+    "lat": 42.2853235,
+    "lon": -83.52522599999999,
+    "haunted_count": 138.0,
+    "crime_rate": 1065.188284,
+    "year": 2003
+  },
+  {
+    "city": "Canton",
+    "state": "Michigan",
+    "lat": 42.2853235,
+    "lon": -83.52522599999999,
+    "haunted_count": 138.0,
+    "crime_rate": 1065.188284,
+    "year": 2003
+  },
+  {
+    "city": "Canton",
+    "state": "Michigan",
+    "lat": 42.3218667,
+    "lon": -83.4895295,
+    "haunted_count": 138.0,
+    "crime_rate": 1065.188284,
+    "year": 2000
+  },
+  {
+    "city": "Canton",
+    "state": "Michigan",
+    "lat": 42.3428997,
+    "lon": -83.5177329,
+    "haunted_count": 138.0,
+    "crime_rate": 1065.188284,
+    "year": 2000
+  },
+  {
+    "city": "Cass City",
+    "state": "Michigan",
+    "lat": 43.5727986,
+    "lon": -83.1334217,
+    "haunted_count": 4.0,
+    "crime_rate": 165.8588725,
+    "year": 2006
+  },
+  {
+    "city": "Central Lake",
+    "state": "Michigan",
+    "lat": 45.0720901,
+    "lon": -85.264923,
+    "haunted_count": 3.0,
+    "crime_rate": 154.0436457,
+    "year": null
+  },
+  {
+    "city": "Charlevoix",
+    "state": "Michigan",
+    "lat": 45.3192451,
+    "lon": -85.25928429999999,
+    "haunted_count": 1.0,
+    "crime_rate": 145.4322783,
+    "year": 2005
+  },
+  {
+    "city": "Charlotte",
+    "state": "Michigan",
+    "lat": 42.56126099999999,
+    "lon": -84.8354913,
+    "haunted_count": 6.0,
+    "crime_rate": 174.4379223,
+    "year": 1993
+  },
+  {
+    "city": "Charlotte",
+    "state": "Michigan",
+    "lat": 42.5556987,
+    "lon": -84.85648599999999,
+    "haunted_count": 6.0,
+    "crime_rate": 174.4379223,
+    "year": 1993
+  },
+  {
+    "city": "Cheboygan",
+    "state": "Michigan",
+    "lat": 45.64695630000001,
+    "lon": -84.4744795,
+    "haunted_count": 3.0,
+    "crime_rate": 108.8393065,
+    "year": null
+  },
+  {
+    "city": "Cheboygan",
+    "state": "Michigan",
+    "lat": 45.552789,
+    "lon": -84.7839364,
+    "haunted_count": 6.0,
+    "crime_rate": 126.7350634,
+    "year": null
+  },
+  {
+    "city": "Cheboygan",
+    "state": "Michigan",
+    "lat": 45.64695630000001,
+    "lon": -84.4744795,
+    "haunted_count": 3.0,
+    "crime_rate": 108.8393065,
+    "year": null
+  },
+  {
+    "city": "Chelsea",
+    "state": "Michigan",
+    "lat": 42.3182386,
+    "lon": -84.0096366,
+    "haunted_count": 17.0,
+    "crime_rate": 294.4331527,
+    "year": 1996
+  },
+  {
+    "city": "Chelsea",
+    "state": "Michigan",
+    "lat": 42.3104227,
+    "lon": -84.0165056,
+    "haunted_count": 17.0,
+    "crime_rate": 294.4331527,
+    "year": 2010
+  },
+  {
+    "city": "Chelsea",
+    "state": "Michigan",
+    "lat": 42.3180919,
+    "lon": -84.0205029,
+    "haunted_count": 17.0,
+    "crime_rate": 294.4331527,
+    "year": null
+  },
+  {
+    "city": "Chesaning",
+    "state": "Michigan",
+    "lat": 43.1847483,
+    "lon": -84.11497469999999,
+    "haunted_count": 8.0,
+    "crime_rate": 828.830479,
+    "year": null
+  },
+  {
+    "city": "Clarksdale",
+    "state": "Michigan",
+    "lat": 42.7150605,
+    "lon": -83.3426114,
+    "haunted_count": 42.0,
+    "crime_rate": 206.391478,
+    "year": 1980
+  },
+  {
+    "city": "Clarkston",
+    "state": "Michigan",
+    "lat": 42.660509,
+    "lon": -83.43415,
+    "haunted_count": 42.0,
+    "crime_rate": 206.391478,
+    "year": 1979
+  },
+  {
+    "city": "Clarkston",
+    "state": "Michigan",
+    "lat": 42.7229641,
+    "lon": -83.426161,
+    "haunted_count": 42.0,
+    "crime_rate": 206.391478,
+    "year": 1980
+  },
+  {
+    "city": "Clinton Township",
+    "state": "Michigan",
+    "lat": 42.5975415,
+    "lon": -82.97202519999999,
+    "haunted_count": 40.0,
+    "crime_rate": 290.7218207,
+    "year": 1986
+  },
+  {
+    "city": "Clinton Township",
+    "state": "Michigan",
+    "lat": 42.5811627,
+    "lon": -82.9564118,
+    "haunted_count": 40.0,
+    "crime_rate": 290.7218207,
+    "year": 1986
+  },
+  {
+    "city": "Clinton Township",
+    "state": "Michigan",
+    "lat": 42.5764741,
+    "lon": -82.9707913,
+    "haunted_count": 40.0,
+    "crime_rate": 290.7218207,
+    "year": 1986
+  },
+  {
+    "city": "Clinton County",
+    "state": "Michigan",
+    "lat": 43.001143,
+    "lon": -84.55915209999999,
+    "haunted_count": 34.0,
+    "crime_rate": 130.3118362,
+    "year": 2000
+  },
+  {
+    "city": "Clinton County",
+    "state": "Michigan",
+    "lat": 43.001143,
+    "lon": -84.55915209999999,
+    "haunted_count": 34.0,
+    "crime_rate": 130.3118362,
+    "year": 2000
+  },
+  {
+    "city": "Clinton Township",
+    "state": "Michigan",
+    "lat": 42.57925609999999,
+    "lon": -82.91593259999999,
+    "haunted_count": 40.0,
+    "crime_rate": 290.7218207,
+    "year": 1996
+  },
+  {
+    "city": "Clyde township",
+    "state": "Michigan",
+    "lat": 43.0362674,
+    "lon": -82.56376,
+    "haunted_count": 27.0,
+    "crime_rate": 259.2401025,
+    "year": null
+  },
+  {
+    "city": "Cockeysville",
+    "state": "Michigan",
+    "lat": 39.4536423,
+    "lon": -76.671167,
+    "haunted_count": 41.0,
+    "crime_rate": null,
+    "year": 1972
+  },
+  {
+    "city": "Coldwater",
+    "state": "Michigan",
+    "lat": 41.9403263,
+    "lon": -85.00052149999999,
+    "haunted_count": 2.0,
+    "crime_rate": 203.8992875,
+    "year": null
+  },
+  {
+    "city": "Coldwater",
+    "state": "Michigan",
+    "lat": 42.3062055,
+    "lon": -85.17774469999999,
+    "haunted_count": 19.0,
+    "crime_rate": 602.1686961,
+    "year": 2001
+  },
+  {
+    "city": "Croton",
+    "state": "Michigan",
+    "lat": 43.437111,
+    "lon": -85.66338909999999,
+    "haunted_count": 5.0,
+    "crime_rate": 249.9947918,
+    "year": 1979
+  },
+  {
+    "city": "Cranbrooke campus",
+    "state": "Michigan",
+    "lat": 42.5770046,
+    "lon": -83.24118059999999,
+    "haunted_count": 42.0,
+    "crime_rate": 206.391478,
+    "year": 1973
+  },
+  {
+    "city": "Crystal Falls",
+    "state": "Michigan",
+    "lat": 46.0980066,
+    "lon": -88.3340242,
+    "haunted_count": 9.0,
+    "crime_rate": 156.3042723,
+    "year": null
+  },
+  {
+    "city": "Dansville",
+    "state": "Michigan",
+    "lat": 42.5293347,
+    "lon": -84.3172743,
+    "haunted_count": 15.0,
+    "crime_rate": 485.4128135,
+    "year": null
+  },
+  {
+    "city": "Davison",
+    "state": "Michigan",
+    "lat": 43.031357,
+    "lon": -83.516398,
+    "haunted_count": 20.0,
+    "crime_rate": 922.7783984,
+    "year": 1982
+  },
+  {
+    "city": "Dearborn",
+    "state": "Michigan",
+    "lat": 42.3186735,
+    "lon": -83.28307509999999,
+    "haunted_count": 138.0,
+    "crime_rate": 1065.188284,
+    "year": 1970
+  },
+  {
+    "city": "Dearborn",
+    "state": "Michigan",
+    "lat": 42.3171511,
+    "lon": -83.2780925,
+    "haunted_count": 138.0,
+    "crime_rate": 1065.188284,
+    "year": 1970
+  },
+  {
+    "city": "Dearborn",
+    "state": "Michigan",
+    "lat": 42.30534859999999,
+    "lon": -83.2639806,
+    "haunted_count": 138.0,
+    "crime_rate": 1065.188284,
+    "year": 1970
+  },
+  {
+    "city": "Dearborn",
+    "state": "Michigan",
+    "lat": 42.3053156,
+    "lon": -83.2246496,
+    "haunted_count": 138.0,
+    "crime_rate": 1065.188284,
+    "year": 1969
+  },
+  {
+    "city": "Dearborn",
+    "state": "Michigan",
+    "lat": 42.3053156,
+    "lon": -83.2246496,
+    "haunted_count": 138.0,
+    "crime_rate": 1065.188284,
+    "year": 1969
+  },
+  {
+    "city": "Dearborn",
+    "state": "Michigan",
+    "lat": 42.3140335,
+    "lon": -83.2324072,
+    "haunted_count": 138.0,
+    "crime_rate": 1065.188284,
+    "year": 1966
+  },
+  {
+    "city": "Dearborn",
+    "state": "Michigan",
+    "lat": 42.2912778,
+    "lon": -83.249648,
+    "haunted_count": 138.0,
+    "crime_rate": 1065.188284,
+    "year": 1970
+  },
+  {
+    "city": "Dearborn",
+    "state": "Michigan",
+    "lat": 42.3204642,
+    "lon": -83.2170915,
+    "haunted_count": 138.0,
+    "crime_rate": 1065.188284,
+    "year": 1969
+  },
+  {
+    "city": "Dearborn",
+    "state": "Michigan",
+    "lat": 42.298213,
+    "lon": -83.2726327,
+    "haunted_count": 138.0,
+    "crime_rate": 1065.188284,
+    "year": 1970
+  },
+  {
+    "city": "Dearborn",
+    "state": "Michigan",
+    "lat": 42.3064362,
+    "lon": -83.2008523,
+    "haunted_count": 138.0,
+    "crime_rate": 1065.188284,
+    "year": 1969
+  },
+  {
+    "city": "Dearborn Heights",
+    "state": "Michigan",
+    "lat": 42.3367661,
+    "lon": -83.297266,
+    "haunted_count": 138.0,
+    "crime_rate": 1065.188284,
+    "year": 1980
+  },
+  {
+    "city": "Dearborn Heights",
+    "state": "Michigan",
+    "lat": 42.3220925,
+    "lon": -83.2932414,
+    "haunted_count": 138.0,
+    "crime_rate": 1065.188284,
+    "year": 1980
+  },
+  {
+    "city": "Dearborn Heights",
+    "state": "Michigan",
+    "lat": 42.3220925,
+    "lon": -83.2932414,
+    "haunted_count": 138.0,
+    "crime_rate": 1065.188284,
+    "year": 1980
+  },
+  {
+    "city": "Dearborn Heights",
+    "state": "Michigan",
+    "lat": 42.3371456,
+    "lon": -83.2853311,
+    "haunted_count": 138.0,
+    "crime_rate": 1065.188284,
+    "year": 1980
+  }
+]
