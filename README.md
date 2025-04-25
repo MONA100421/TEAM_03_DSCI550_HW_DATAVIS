@@ -2,8 +2,6 @@
 
 ## 📌 Project Overview
 
-https://mona100421.github.io/TEAM_03_DSCI550_HW_DATAVIS/.
-
 This project builds a **web-based data visualization app** to showcase insights from our previous Haunted Places data analysis. Using **D3.js**, **MEMEX ImageSpace**, and **GeoParser**, we created an interactive mini-site that integrates:
 
 - Sightings and trends across time and space
