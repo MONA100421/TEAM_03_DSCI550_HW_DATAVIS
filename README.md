@@ -64,11 +64,11 @@ TEAM_03_DSCI550_HW_DATAVIS/
 
 ### 2. D3 Visualizations
 Five interactive charts were created:
-- 📊 Bar chart: Top Named Entities
-- 📈 Line chart: Sightings over time
-- 🌍 Choropleth: Sightings by U.S. state
-- 🔦 Sunlight vs. Sightings scatter plot
-- 🌲 Similarity Tree: Haunted image objects
+- 📊 Bar Chart: Top haunted cities by count
+- 🗺️ Bubble Map: Haunting density across U.S. map
+- 📈 Line Chart: Hauntings vs. historical landmark year
+- 🔍 Scatter Plot: Crime rate vs. haunting count
+- 🧭 Parallel Coordinates Plot: Hauntings, crime, and history link
 
 ### 3. ImageSpace Deployment
 - Installed via Docker.
