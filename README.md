@@ -101,5 +101,4 @@ TEAM_03_DSCI550_HW_DATAVIS/
 - ImageSpace indexing succeeded, but thumbnails failed to render in SMQTK.
 - Many `time_of_day` fields defaulted to "Unknown" due to extraction issues.
 - Some haunted places were mislocated internationally (e.g., UK, India).
-
 ```
