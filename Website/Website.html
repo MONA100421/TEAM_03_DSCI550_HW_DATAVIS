@@ -249,6 +249,13 @@
             <button class="btn btn-visualization" onclick="loadVisualization('line_chart')">Line Chart representing Haunted Places Count by Year</button>      	
             <button class="btn btn-visualization" onclick="loadVisualization('scatter_plot')">Scatter Plot representing Haunted Places Count vs Crime Rate</button>
             <button class="btn btn-visualization" onclick="loadVisualization('heatmap')">Parallel Coordinates Plot comparing Haunted Count, Crime Rate and Year of Nearest Historical Place</button>
+            <button class="btn btn-visualization" onclick="loadVisualization('static_density_religion')">Density × Adherents (%)</button>
+            <button class="btn btn-visualization" onclick="loadVisualization('static_density_binge')">Density × Binge Drinking Rate</button>
+            <button class="btn btn-visualization" onclick="loadVisualization('static_apparition_type')">Haunted Places by Apparition Type</button>
+            <button class="btn btn-visualization" onclick="loadVisualization('static_daylight_map')">Haunted Places by Avg Daylight Hours</button>
+            <button class="btn btn-visualization" onclick="loadVisualization('static_time_of_day')">Haunted Places by Time of Day</button>
+            <button class="btn btn-visualization" onclick="loadVisualization('static_heatmap')">Heatmap of Haunted Places</button>
+            <button class="btn btn-visualization" onclick="loadVisualization('static_daylight_density')">Density × Daylight Hours</button>
             <!-- Container where visualizations and insights will be loaded dynamically -->
             <div id="visualizationContainer" class="mt-4"></div>
         </div>
@@ -284,7 +291,36 @@
             'heatmap': {
                 detail: "This parallel coordinates plot maps haunted place counts against crime rates and the age of nearby historical places. Each line represents a city, colored uniquely to show its path across the three variables.",
                 insight: "Cities with a high number of haunted places tend to also have older historical landmarks and moderately elevated crime rates. This intersection points to a pattern: older cities with deep-rooted histories and dense populations may naturally accumulate more stories of hauntings, some of which overlap with social or crime issues, shaping their haunted identity."
+            },
+            'static_density_religion': {
+                detail: "This map visualizes the normalized density of haunted places multiplied by the percentage of religious adherents across U.S. counties. Darker blue areas indicate a higher product of density and adherence rate.",
+                insight: "Regions with stronger religious adherence, particularly in the Midwest and South, appear to coincide with a higher density of haunted places. This correlation may reflect a cultural tendency to interpret unusual phenomena through spiritual or religious lenses, thereby increasing the documentation or belief in hauntings."
+            },
+            'static_density_binge': {
+                detail: "This map shows the spatial correlation between haunted place density and binge drinking rates, using a color gradient from light to red to represent the strength of the correlation.",
+                insight: "There is a mild overlap between areas with elevated binge drinking and higher haunted place density, especially in central and midwestern states. This may suggest that altered perceptions or community stress factors contribute to reported hauntings in these areas."
+            },
+            'static_apparition_type': {
+                detail: "This map plots different apparition types reported in haunted place records across the U.S., using colored dots to represent categories such as Ghost, Child, Orb, Male, Female, and UFO.",
+                insight: "The overwhelming dominance of blue markers for 'Ghost' apparitions indicates a general preference or cultural bias toward describing hauntings in ghostly terms. However, the presence of other types like orbs and UFOs suggests a broader diversity of interpretation influenced by regional or media narratives."
+            },
+            'static_daylight_map': {
+                detail: "This choropleth map visualizes the average daylight hours in haunted place locations. Warmer red tones indicate lower daylight exposure.",
+                insight: "Locations with fewer daylight hours, particularly in the southern and midwestern U.S., tend to report more hauntings. This supports the theory that darkness and shorter days may psychologically contribute to eerie experiences or increased haunting reports."
+            },
+            'static_time_of_day': {
+                detail: "This map categorizes haunting events based on the time of day they occurred—morning, evening, or dusk—using color-coded markers.",
+                insight: "Most hauntings are reported in the evening, followed by morning and dusk. This pattern could relate to natural low-light conditions that increase ambiguity and fear perception, making eerie events more likely to be interpreted as supernatural."
+            },
+            'static_heatmap': {
+                detail: "This heatmap shows the overall intensity of haunted places reported across the U.S., with brighter colors representing denser clusters.",
+                insight: "The strongest concentrations of haunted reports are in the eastern and southern U.S., potentially due to these regions having older settlements, more historical buildings, and deeper oral storytelling traditions."
+            },
+            'static_daylight_density': {
+                detail: "This map multiplies haunted place density with average daylight hours to explore their interaction, using a gradient from light to dark to indicate combined scores.",
+                insight: "Some of the highest combined values are seen in states like Michigan and Pennsylvania. This visualization suggests that moderate daylight levels combined with historically dense populations could be driving forces behind sustained haunting narratives."
             }
+
         };
 
     // Function to show or hide the visualization menu
