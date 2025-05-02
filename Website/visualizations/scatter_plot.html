@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Haunted Count vs Crime Rate - Scatter Plot</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 40px;
+    }
+    circle {
+      fill: steelblue;
+      opacity: 0.7;
+    }
+    circle:hover {
+      fill: darkorange;
+    }
+    .axis-label {
+      font-size: 14px;
+    }
+    .tooltip {
+      position: absolute;
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 6px;
+      font-size: 13px;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <h2>Haunted House Count vs Crime Rate (per 100,000)</h2>
+  <svg width="960" height="600"></svg>
+  <div class="tooltip" style="display:none;"></div>
+
+  <script>
+    const svg = d3.select("svg"),
+          margin = {top: 40, right: 30, bottom: 60, left: 80},
+          width = +svg.attr("width") - margin.left - margin.right,
+          height = +svg.attr("height") - margin.top - margin.bottom;
+
+    const g = svg.append("g")
+                 .attr("transform", `translate(${margin.left},${margin.top})`);
+
+    const tooltip = d3.select(".tooltip");
+
+    d3.json("../data/haunted_places_subset_100.json").then(data => {
+      data = data.filter(d => d.haunted_count !== null && d.crime_rate !== null);
+
+      const x = d3.scaleLinear()
+                  .domain([0, d3.max(data, d => +d.haunted_count) * 1.1])
+                  .range([0, width]);
+
+      const y = d3.scaleLinear()
+                  .domain([0, d3.max(data, d => +d.crime_rate) * 1.1])
+                  .range([height, 0]);
+
+      // X Axis
+      g.append("g")
+        .attr("transform", `translate(0,${height})`)
+        .call(d3.axisBottom(x));
+
+      // Y Axis
+      g.append("g")
+        .call(d3.axisLeft(y));
+
+      // Dots
+      g.selectAll("circle")
+        .data(data)
+        .enter()
+        .append("circle")
+          .attr("cx", d => x(+d.haunted_count))
+          .attr("cy", d => y(+d.crime_rate))
+          .attr("r", 5)
+          .on("mouseover", function(event, d) {
+            tooltip.style("display", "block")
+                   .html(`<strong>${d.city}</strong><br/>Haunted: ${d.haunted_count}<br/>Crime: ${d.crime_rate.toFixed(1)}`)
+                   .style("left", (event.pageX + 10) + "px")
+                   .style("top", (event.pageY - 28) + "px");
+          })
+          .on("mouseout", function() {
+            tooltip.style("display", "none");
+          });
+
+      // Axis Labels
+      svg.append("text")
+         .attr("x", width / 2 + margin.left)
+         .attr("y", svg.attr("height") - 10)
+         .attr("text-anchor", "middle")
+         .attr("class", "axis-label")
+         .text("Haunted House Count");
+
+      svg.append("text")
+         .attr("x", -(height / 2) - margin.top)
+         .attr("y", 20)
+         .attr("transform", "rotate(-90)")
+         .attr("text-anchor", "middle")
+         .attr("class", "axis-label")
+         .text("Crime Rate (per 100,000)");
+    });
+  </script>
+</body>
+</html>

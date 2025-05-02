@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Parallel Coordinates - Haunted Data</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    .axis path,
+    .axis line {
+      fill: none;
+      stroke: #ccc;
+      shape-rendering: crispEdges;
+    }
+    .line {
+      fill: none;
+      stroke-width: 1.5px;
+      opacity: 0.5;
+    }
+    .line:hover {
+      stroke-width: 3px;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <h2>Parallel Coordinates: Haunted Places, Crime, and Historic Age</h2>
+  <svg width="960" height="500"></svg>
+
+  <script>
+    const svg = d3.select("svg"),
+          width = +svg.attr("width"),
+          height = +svg.attr("height"),
+          margin = { top: 30, right: 40, bottom: 10, left: 40 },
+          innerWidth = width - margin.left - margin.right,
+          innerHeight = height - margin.top - margin.bottom;
+
+    const g = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
+
+    d3.json("../data/parallel_data.json").then(data => {
+      const dimensions = ["haunted", "crime", "historic_age"];
+
+      const y = {};
+      for (const dim of dimensions) {
+        y[dim] = d3.scaleLinear()
+                   .domain(d3.extent(data, d => d[dim]))
+                   .range([innerHeight, 0]);
+      }
+
+      const x = d3.scalePoint()
+                  .domain(dimensions)
+                  .range([0, innerWidth]);
+
+      const color = d3.scaleOrdinal(d3.schemeCategory10);
+
+      function path(d) {
+        return d3.line()(dimensions.map(p => [x(p), y[p](d[p])]));
+      }
+
+      g.selectAll(".line")
+        .data(data)
+        .enter().append("path")
+        .attr("class", "line")
+        .attr("d", path)
+        .attr("stroke", (_, i) => color(i));
+
+      g.selectAll(".axis")
+        .data(dimensions)
+        .enter().append("g")
+        .attr("class", "axis")
+        .attr("transform", d => `translate(${x(d)})`)
+        .each(function(d) {
+          d3.select(this).call(d3.axisLeft(y[d]));
+        })
+        .append("text")
+        .style("text-anchor", "middle")
+        .attr("y", -9)
+        .text(d => d.toUpperCase())
+        .style("fill", "#333");
+    });
+  </script>
+</body>
+</html>
