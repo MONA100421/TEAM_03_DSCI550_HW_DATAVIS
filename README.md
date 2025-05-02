@@ -1,16 +1,16 @@
+
 # 🕸️ TEAM03 – Haunted Places Web Data Visualization (DSCI 550)
 
-## 📌 Project Overview
+A web-based data visualization project exploring patterns and sociocultural correlations among haunted place records in the United States. This project was developed for the DSCI 550: Data Visualization course at the University of Southern California.
 
-This project builds a **web-based data visualization app** to showcase insights from our previous Haunted Places data analysis. Using **D3.js**, **MEMEX ImageSpace**, and **GeoParser**, we created an interactive mini-site that integrates:
+## 🔮 Project Overview
 
-- Sightings and trends across time and space
-- Visual similarity of haunted place images
-- Location-based insights via named entity recognition
+Using a rich dataset of haunted locations across the U.S., we applied a combination of geospatial processing, D3.js charting, and open-source mapping tools (Leaflet) to explore:
 
-The project highlights our multimodal approach to analyzing and visualizing social media-style haunted data.
-
----
+- Temporal and spatial clustering of hauntings
+- Correlations with social indicators such as crime rate, religious adherence, and binge drinking
+- Differences in haunting descriptions (apparition types, time of day, etc.)
+- Data quality and feature extraction insights from earlier assignments
 
 ## 👥 Team Members
 
@@ -23,94 +23,83 @@ The project highlights our multimodal approach to analyzing and visualizing soci
 | Yung Yee Chia        | yungyeec@usc.edu   |
 | Colin Leahey         | cleahey@usc.edu    |
 
----
+## 🌍 Features and Visualizations
 
-## 📂 Directory Structure
+The following 13 interactive visualizations are included:
+
+1. **Bar Chart** - Haunted House Count by City
+2. **Bubble Map** - Haunted Place Density
+3. **Line Chart** - Historical Year of Nearest Landmark
+4. **Scatter Plot** - Haunted Count vs Crime Rate
+5. **Parallel Coordinates** - Haunted, Crime, Historical Age
+6. **Density × Religious Adherence**
+7. **Density × Binge Drinking Rate**
+8. **Apparition Types Map**
+9. **Average Daylight Hours Choropleth**
+10. **Time of Day Map**
+11. **Heatmap of Haunted Places**
+12. **Density × Daylight Hours**
+13. **Geo-validation Screenshots for Anomalies**
+
+Each chart is paired with a narrative description and insight based on pattern recognition and data storytelling.
+
+## 🛠️ Tech Stack
+
+- HTML / CSS / JavaScript
+- Bootstrap 4.5
+- D3.js v7
+- Leaflet.js for geo-visualizations
+- Python (Pandas / JSON handling)
+- Apache Tika + GeoParser (exploratory)
+- PostgreSQL (ImageSpace ingestion)
+- Docker (for ImageSpace + SMQTK deployment)
+
+## 📁 Directory Structure
 
 ```
+
 TEAM_03_DSCI550_HW_DATAVIS/
 │
-├── Data/
-│   ├── haunted_places_v2.tsv
-│   ├── haunted_places_summary.json
-│   └── geo_locations_subset.json
-│
-├── Source Code/
-│   ├── scripts/
-│   │   ├── tsv_to_json_converter.py
-│   │   ├── data_summary_generator.py
-│   │   └── ingestion_imagecat.py
-│   └── notebooks/
-│       └── visualization_prep.ipynb
-│
 ├── Website/
-│   ├── index.html
-│   ├── css/
-│   ├── js/
-│   └── assets/
+│   ├── index.html / Website.html            # Main interactive dashboard
+│   ├── visualizations/                      # Embedded HTMLs for each chart
+│   ├── data/                                # All preprocessed JSON + TSV files
+│   ├── scripts/                             # Python scripts for TSV → JSON conversion
+│   └── Images/                              # Ghost\_Woman background, USC logo
 │
-├── Requirements.txt
-├── Readme.txt
-└── TEAM03_DATAVIS_Report.pdf
+├── Imagespace\_Screenshots/                  # Screenshots of ImageSpace similarity interface
+│   ├── ImageSpace\_Similarity\_Result\_ListView\.png
+│   └── ImageSpace\_Similarity\_GridView\_ThumbnailsMissing.png
+│
+├── Visual\_Assets/                           # All exported map visuals (PNG)
+│   ├── Correlation Between Haunted Places Density and Adherents Percentage.png
+│   ├── Correlation Between Haunted Places Density and Binge Drinking Rate.png
+│   ├── Haunted Places by Apparition Type.png
+│   ├── Haunted Places by Average Daylight Hours.png
+│   ├── Haunted Places by Time of Day.png
+│   ├── Heatmap for Haunted Places.png
+│   └── Normalized Density x Avg Daylight Hours.png
+│
+├── TEAM_03_DSCI550_HW_DATAVIS.pdf                 # Final PDF version of report
+├── README.md                                # This file
+└── hauntedplaces\_core.tar.gz                # Original data archive
+
 ```
 
----
+## 📊 Scripts
 
-## ✅ Completed Tasks
+| Script Name                  | Purpose                                                  |
+|-----------------------------|----------------------------------------------------------|
+| `prepare_data.py`           | Cleans TSV and extracts haunted places to JSON           |
+| `prepare_data_100.py`       | Samples top N haunted places for simplified map rendering|
+| `aggregate_by_year.py`      | Groups haunted records by historical landmark year       |
+| `aggregate_parallel_data.py`| Prepares city summaries for parallel coordinates plot     |
 
-### 1. Data Preparation
-- Converted `TSV` data to `JSON` using `etllib` and custom Python scripts.
-- Aggregated summaries for D3-ready formats.
+## 🧪 Known Issues
 
-### 2. D3 Visualizations
-Five interactive charts were created:
-- 📊 Bar Chart: Top haunted cities by count
-- 🗺️ Bubble Map: Haunting density across U.S. map
-- 📈 Line Chart: Hauntings vs. historical landmark year
-- 🔍 Scatter Plot: Crime rate vs. haunting count
-- 🧭 Parallel Coordinates Plot: Hauntings, crime, and history link
+- GeoParser (via Tika) was difficult to run due to legacy dependencies.
+- ImageSpace indexing succeeded, but thumbnails failed to render in SMQTK.
+- Many `time_of_day` fields defaulted to "Unknown" due to extraction issues.
+- Some haunted places were mislocated internationally (e.g., UK, India).
 
-### 3. ImageSpace Deployment
-- Installed via Docker.
-- Indexed images using `Tika` and `ImageCat`.
-- Searched for visual similarity via SMQTK and FLANN.
-
-### 4. GeoParser Visualization
-- Extracted and mapped location entities using GeoParser.
-- Compared locations from assignments 1 and 2.
-
-### 5. ElasticSearch Integration
-- Docker-based setup.
-- Indexed selected features for search and filtering.
-
----
-
-## ⚙️ Setup Instructions
-
-### 🔧 Dependencies
-
-- Python 3.8+
-- Docker + Docker Compose
-- Node.js & npm
-- Tesseract OCR
-- ElasticSearch / Solr
-- Tika-Python, SMQTK, ImageCat
-
-```bash
-pip install -r Requirements.txt
-```
-
-### 🚀 Run Locally
-
-```bash
-# Step 1: Convert and summarize data
-cd Source Code/scripts/
-python tsv_to_json_converter.py
-python data_summary_generator.py
-
-# Step 2: Launch website
-cd Website/
-python -m http.server 8080
-
-# Visit: http://localhost:8080
 ```
