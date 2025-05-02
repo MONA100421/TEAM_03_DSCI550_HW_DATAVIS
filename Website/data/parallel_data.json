@@ -1,0 +1,302 @@
+[
+  {
+    "city": "Los Angeles, California",
+    "haunted": 18697.0,
+    "crime": 440.9565629677966,
+    "historic_age": 33.983050847457626
+  },
+  {
+    "city": "Hollywood, California",
+    "haunted": 6107.0,
+    "crime": 457.63185882,
+    "historic_age": 31.3
+  },
+  {
+    "city": "Pasadena, California",
+    "haunted": 3520.0,
+    "crime": 444.800814,
+    "historic_age": 43.36363636363637
+  },
+  {
+    "city": "Pittsburgh, Pennsylvania",
+    "haunted": 3380.0,
+    "crime": 404.00413997179487,
+    "historic_age": 38.1025641025641
+  },
+  {
+    "city": "Honolulu, Hawaii",
+    "haunted": 3240.0,
+    "crime": 237.5362126,
+    "historic_age": 37.15
+  },
+  {
+    "city": "Whittier, California",
+    "haunted": 3200.0,
+    "crime": 444.800814,
+    "historic_age": 41.2
+  },
+  {
+    "city": "San Antonio, Texas",
+    "haunted": 2967.0,
+    "crime": 429.347758366,
+    "historic_age": 39.02
+  },
+  {
+    "city": "Orlando, Florida",
+    "haunted": 2518.0,
+    "crime": 547.9710046730769,
+    "historic_age": 27.615384615384617
+  },
+  {
+    "city": "Montebello, California",
+    "haunted": 2240.0,
+    "crime": 444.800814,
+    "historic_age": 42.0
+  },
+  {
+    "city": "Louisville, Kentucky",
+    "haunted": 2146.0,
+    "crime": 523.882071337,
+    "historic_age": 41.15
+  },
+  {
+    "city": "Detroit, Michigan",
+    "haunted": 2070.0,
+    "crime": 1065.188284,
+    "historic_age": 33.46666666666667
+  },
+  {
+    "city": "San Gabriel, California",
+    "haunted": 1920.0,
+    "crime": 444.800814,
+    "historic_age": 45.0
+  },
+  {
+    "city": "El Paso, Texas",
+    "haunted": 1872.0,
+    "crime": 391.4376636,
+    "historic_age": 40.166666666666664
+  },
+  {
+    "city": "Dearborn, Michigan",
+    "haunted": 1794.0,
+    "crime": 1065.188284,
+    "historic_age": 53.76923076923077
+  },
+  {
+    "city": "Chicago, Illinois",
+    "haunted": 1728.0,
+    "crime": 596.6569351,
+    "historic_age": 32.375
+  },
+  {
+    "city": "Colorado Springs, Colorado",
+    "haunted": 1638.0,
+    "crime": 379.058506,
+    "historic_age": 33.95238095238095
+  },
+  {
+    "city": "Alhambra, California",
+    "haunted": 1600.0,
+    "crime": 444.800814,
+    "historic_age": 47.0
+  },
+  {
+    "city": "East Los Angeles, California",
+    "haunted": 1600.0,
+    "crime": 444.800814,
+    "historic_age": 29.4
+  },
+  {
+    "city": "Long Beach, California",
+    "haunted": 1600.0,
+    "crime": 444.800814,
+    "historic_age": 38.4
+  },
+  {
+    "city": "Riverside, California",
+    "haunted": 1392.0,
+    "crime": 304.8627551,
+    "historic_age": 46.958333333333336
+  },
+  {
+    "city": "Disneyland, California",
+    "haunted": 1370.0,
+    "crime": 217.99000310000002,
+    "historic_age": 42.4
+  },
+  {
+    "city": "Salem, Oregon",
+    "haunted": 1312.0,
+    "crime": 235.7659168222222,
+    "historic_age": 31.0
+  },
+  {
+    "city": "St. Louis, Missouri",
+    "haunted": 1282.0,
+    "crime": 301.18132078260874,
+    "historic_age": 36.21739130434783
+  },
+  {
+    "city": "Claremont, California",
+    "haunted": 1280.0,
+    "crime": 444.800814,
+    "historic_age": 33.75
+  },
+  {
+    "city": "Arcadia, California",
+    "haunted": 1280.0,
+    "crime": 444.800814,
+    "historic_age": 47.25
+  },
+  {
+    "city": "Palos Verdes, California",
+    "haunted": 1280.0,
+    "crime": 444.800814,
+    "historic_age": 26.25
+  },
+  {
+    "city": "Bellflower, California",
+    "haunted": 1280.0,
+    "crime": 444.800814,
+    "historic_age": 39.0
+  },
+  {
+    "city": "Bell Gardens, California",
+    "haunted": 1280.0,
+    "crime": 444.800814,
+    "historic_age": 44.5
+  },
+  {
+    "city": "La Puente, California",
+    "haunted": 1280.0,
+    "crime": 444.800814,
+    "historic_age": 48.0
+  },
+  {
+    "city": "Westland, Michigan",
+    "haunted": 1242.0,
+    "crime": 1065.188284,
+    "historic_age": 21.77777777777778
+  },
+  {
+    "city": "Houston, Texas",
+    "haunted": 1176.0,
+    "crime": 638.2099771347825,
+    "historic_age": 27.304347826086957
+  },
+  {
+    "city": "Redlands, California",
+    "haunted": 1156.0,
+    "crime": 433.51608825833335,
+    "historic_age": 35.083333333333336
+  },
+  {
+    "city": "San Diego, California",
+    "haunted": 1102.0,
+    "crime": 377.6798350956522,
+    "historic_age": 43.0
+  },
+  {
+    "city": "San Jose, California",
+    "haunted": 1083.0,
+    "crime": 265.4076897,
+    "historic_age": 27.63157894736842
+  },
+  {
+    "city": "Las Vegas, Nevada",
+    "haunted": 1054.0,
+    "crime": 685.153077,
+    "historic_age": 34.294117647058826
+  },
+  {
+    "city": "Seattle, Washington",
+    "haunted": 1035.0,
+    "crime": 337.2057704,
+    "historic_age": 38.0
+  },
+  {
+    "city": "Fullerton, California",
+    "haunted": 1005.0,
+    "crime": 255.79180491666668,
+    "historic_age": 41.333333333333336
+  },
+  {
+    "city": "Dearborn Heights, Michigan",
+    "haunted": 966.0,
+    "crime": 1065.188284,
+    "historic_age": 48.857142857142854
+  },
+  {
+    "city": "Monrovia, California",
+    "haunted": 960.0,
+    "crime": 444.800814,
+    "historic_age": 43.666666666666664
+  },
+  {
+    "city": "Lancaster, California",
+    "haunted": 960.0,
+    "crime": 444.800814,
+    "historic_age": 37.333333333333336
+  },
+  {
+    "city": "Glendora, California",
+    "haunted": 960.0,
+    "crime": 444.800814,
+    "historic_age": 42.333333333333336
+  },
+  {
+    "city": "Valencia, California",
+    "haunted": 960.0,
+    "crime": 444.800814,
+    "historic_age": 53.666666666666664
+  },
+  {
+    "city": "Downey, California",
+    "haunted": 960.0,
+    "crime": 444.800814,
+    "historic_age": 43.0
+  },
+  {
+    "city": "Pico Rivera, California",
+    "haunted": 960.0,
+    "crime": 444.800814,
+    "historic_age": 48.666666666666664
+  },
+  {
+    "city": "Pomona, California",
+    "haunted": 960.0,
+    "crime": 444.800814,
+    "historic_age": 43.0
+  },
+  {
+    "city": "Carson, California",
+    "haunted": 960.0,
+    "crime": 444.800814,
+    "historic_age": 39.333333333333336
+  },
+  {
+    "city": "Beverly Hills, California",
+    "haunted": 960.0,
+    "crime": 444.800814,
+    "historic_age": 48.333333333333336
+  },
+  {
+    "city": "San Dimas, California",
+    "haunted": 960.0,
+    "crime": 444.800814,
+    "historic_age": 53.333333333333336
+  },
+  {
+    "city": "Altadena, California",
+    "haunted": 960.0,
+    "crime": 444.800814,
+    "historic_age": 45.0
+  },
+  {
+    "city": "West Hills, California",
+    "haunted": 960.0,
+    "crime": 444.800814,
+    "historic_age": 22.666666666666668
+  }
+]
