@@ -23,7 +23,7 @@
             background-attachment: scroll;
             display: flex;
             flex-direction: column;
-            min-height: 200vh;
+            min-height: 150vh;
         }
 		
         /* Custom styles for the navbar with USC colors */
@@ -226,8 +226,6 @@
                 <p>Member 4:  <a href="mailto:cleahey@usc.edu">Colin Leahey</a></p>
                 <p>Member 5:  <a href="mailto:wengchen@usc.edu">Chen Yi Weng</a></p>
                 <p>Member 6: <a href="mailto:ziliy@usc.edu">Zili Yang</a></p>
-                <!-- <p>LinkedIn Profile: <a href="https://www.linkedin.com/in/vu-l-nguyen" target="_blank">LinkedIn</a></p>            
-                <p>Resume: <a href="https://nguyenlamvu88.github.io/dsci550_assignment_3_visualizations/resume.pdf" target="_blank">View my Resume</a></p> -->
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -250,7 +248,7 @@
 	    <button class="btn btn-visualization" onclick="loadVisualization('bubble_map')">Bubble Map representing Haunted Places Count</button>
             <button class="btn btn-visualization" onclick="loadVisualization('line_chart')">Line Chart representing Haunted Places Count by Year</button>      	
             <button class="btn btn-visualization" onclick="loadVisualization('scatter_plot')">Scatter Plot representing Haunted Places Count vs Crime Rate</button>
-            <button class="btn btn-visualization" onclick="loadVisualization('heatmap')">Treemap of Witness Counts</button>
+            <button class="btn btn-visualization" onclick="loadVisualization('heatmap')">Parallel Coordinates Plot comparing Haunted Count, Crime Rate and Year of Nearest Historical Place</button>
             <!-- Container where visualizations and insights will be loaded dynamically -->
             <div id="visualizationContainer" class="mt-4"></div>
         </div>
@@ -268,26 +266,27 @@
 		// Object holding details and insights for each visualization
         var insights = {
             'bar_chart': {
-                detail: "The word cloud highlights the most common words found in Bigfoot sighting reports. Words like 'forest,' 'black,' 'white,' 'woods,' 'mountain,' 'tree,' and 'night' are prominent, which may reflect common conditions, environment, or descriptors in Bigfoot encounters.",
-                insight: "The frequent mention of 'night' and 'black' in conjunction with 'forest' and 'woods' in Bigfoot sightings suggests that these encounters often occur in low-light conditions within heavy vegetation areas. This combination of darkness and dense foliage might affect the reliability of sightings, potentially explaining some of the ambiguity surrounding the existence of Bigfoot."
+                detail: "This bar chart shows the number of haunted houses reported in various U.S. cities. A handful of cities like Dearborn, Belleville, and Canton show extremely high counts (~135), while most cities have significantly fewer haunted house reports.",
+                insight: "The concentration of haunted houses in specific cities suggests localized folklore, cultural storytelling, or tourism interest may drive haunted house popularity. These cities could be historically significant or have better documentation/reporting infrastructure, amplifying their haunted reputations compared to less represented cities."
             },
             'bubble_map': {
-                detail: 'This map displays Bigfoot sightings across the U.S., with the color intensity representing the number of sightings. Clusters of sightings are notable in the Pacific Northwest and along the Appalachian mountains.',
-                insight: "Bigfoot sightings are not evenly distributed across the U.S., with notable concentrations in the Pacific Northwest and Appalachia. This pattern suggests that environmental factors, such as dense forests, mountainous terrain, and extensive networks of caves or caverns, play a significant role in sightings. The 'Caves and Karst Network in the U.S.' map shows diverse cave types, including solution caves, which are commonly found in the Appalachians, and lava caves, prevalent in the volcanic terrains of the Pacific Northwest. The presence of such natural features may provide the ideal conditions or habitats associated with these mysterious sightings."
+                detail: "This bubble map visualizes haunted place density across the U.S., with larger red circles indicating higher counts. The densest clusters appear in the Midwest and Eastern U.S., with particularly heavy saturation in states like Michigan, Pennsylvania, and Ohio.",
+                insight: "The high density of haunted places in the Midwest and Eastern U.S. may reflect the region's older settlement history, with more historical buildings and folklore. The map visually reinforces the correlation between historical population centers and haunted site documentation."
             },
             'line_chart': {
-                detail: 'This line and bar chart illustrates the number of Bigfoot sightings over time, categorized by the phase of the moon. It seems to suggest no clear correlation between the moon phases and the frequency of sightings. The sightings have increased over the years, peaking around the early 2000s before declining.',
-                insight: "The chart's peak in Bigfoot sightings during the early 2000s could correlate with the proliferation of personal devices like smartphones, enabling on-the-spot documentation and reporting. As traveling became more convenient and frequent, the likelihood of encounters in Bigfoot's alleged territories increased, potentially contributing to the rise in reports. However, the decline in sightings post-2020 may reflect reduced travel during the COVID-19 pandemic, when lockdowns and social distancing likely limited excursions into wilderness areas where such sightings are typically reported. Despite this fluctuation, the data suggests no clear link between sightings and moon phases, challenging the folklore that moonlight affects Bigfoot's visibility or activity."
+                detail: "This line chart displays trends in the number of haunted places by the historical year of their nearest landmark. There are notable peaks around 1980 and 1983, followed by a decline and then a relatively stable frequency.",
+                insight: "The spike in haunted places near historical landmarks from the late 1970s to early 1980s may align with a growing cultural fascination with the paranormal during that era, as seen in popular media and the rise of paranormal tourism. These spikes suggest that historical recognition and storytelling may have catalyzed how hauntings were recorded or perceived."
             },
             'scatter_plot': {
-                detail: 'This map provides insight into Bigfoot sightings in relation to national parks, with sightings often occurring near these protected areas. The green trees represent national parks, and the orange dots represent sightings or encounters.',
-                insight: "There's a noticeable pattern of Bigfoot sightings in proximity to national parks, which could suggest either a tendency of Bigfoot to inhabit these wild, less disturbed areas or a higher likelihood of people reporting sightings in such regions due to outdoor or camping activities."
+                detail: "This scatter plot compares haunted house counts with crime rates (per 100,000 people) in various cities. While some cities with high haunted house counts also have high crime rates, no consistent correlation is observed.",
+                insight: "The lack of strong correlation between haunted house counts and crime rates suggests that haunted reputations are not primarily driven by modern crime statistics. Instead, factors like folklore, media portrayal, or tourism may better explain why certain cities report more hauntings."
             },
             'heatmap': {
-                detail: 'This visualization shows the distribution of Bigfoot sightings across the United States. The size of each box is proportional to the number of witnesses in that state. The larger the box, the higher the number of witnesses reported. Washington state stands out with the most significant number of witnesses, which might suggest a higher likelihood of sighting Bigfoot in this region, or simply a higher propensity among its inhabitants to report such encounters.',
-                insight: 'Washington state leads in Bigfoot sightings, implying either a genuine hotspot for Bigfoot activity or a regional cultural tendency to report sightings. This treemap helps to quickly identify states with higher reports and might be useful in targeting further research and investigation.'
+                detail: "This parallel coordinates plot maps haunted place counts against crime rates and the age of nearby historical places. Each line represents a city, colored uniquely to show its path across the three variables.",
+                insight: "Cities with a high number of haunted places tend to also have older historical landmarks and moderately elevated crime rates. This intersection points to a pattern: older cities with deep-rooted histories and dense populations may naturally accumulate more stories of hauntings, some of which overlap with social or crime issues, shaping their haunted identity."
             }
         };
+
     // Function to show or hide the visualization menu
 	function toggleVisualizationMenu() {
         var menu = document.getElementById("visualizationMenu");
